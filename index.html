@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn 'N Laugh Kids Academy – Where Learning Meets Joy</title>
+<meta name="description" content="Learn 'N Laugh Kids Academy – A world-class early education center offering a joyful, nurturing environment for children to grow, explore, and shine.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-emoji">🏫</div>
+  <div class="loader-text">Learn 'N Laugh Kids Academy</div>
+  <div class="loader-dots"><span></span><span></span><span></span></div>
+</div>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp-float" href="https://wa.me/919876543210" target="_blank" rel="noopener">
+  💬
+  <span class="wa-tooltip">Chat on WhatsApp</span>
+</a>
+
+<!-- SCROLL TO TOP -->
+<div class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+<!-- ========================
+     NAVIGATION
+========================= -->
+<nav id="mainNav">
+  <a href="#hero" class="nav-logo">
+    <div class="nav-logo-icon">
+      <img src="logo.png" alt="Learn 'N Laugh Kids Academy Logo">
+    </div>
+    <div class="nav-logo-text">
+      <span class="line1">Learn 'N Laugh</span>
+      <span class="line2">Kids Academy</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#teachers">Teachers</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#parents">Parents</a></li>
+    <li><a href="#contact" class="nav-cta">Admissions ✨</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">🏫 About</a>
+  <a href="#activities" onclick="closeMenu()">🎨 Activities</a>
+  <a href="#teachers" onclick="closeMenu()">👩‍🏫 Teachers</a>
+  <a href="#events" onclick="closeMenu()">🎉 Events</a>
+  <a href="#gallery" onclick="closeMenu()">📸 Gallery</a>
+  <a href="#parents" onclick="closeMenu()">👨‍👩‍👧 Parents</a>
+  <a href="#contact" class="m-cta" onclick="closeMenu()">✨ Admissions Open!</a>
+</div>
+
+<!-- ========================
+     HERO SECTION
+========================= -->
+<section id="hero">
+  <div class="hero-bg-shapes">
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+    <div class="bg-blob bg-blob-3"></div>
+    <div class="bg-blob bg-blob-4"></div>
+  </div>
+
+  <!-- Floating elements -->
+  <div class="float-el fe1">🎈</div>
+  <div class="float-el fe2">📚</div>
+  <div class="float-el fe3">✏️</div>
+  <div class="float-el fe4">⭐</div>
+  <div class="float-el fe5">🎵</div>
+  <div class="float-el fe6">🦋</div>
+  <div class="float-el fe7">🌈</div>
+  <div class="float-el fe8">🎨</div>
+  <div class="float-el fe9">🌸</div>
+  <div class="float-el fe10">🍎</div>
+
+  <div class="hero-inner">
+    <div class="hero-text reveal-left">
+      <div class="hero-badge">
+        <div class="badge-dot"></div>
+        ✨ Admissions Open 2025–26
+      </div>
+      <h1 class="hero-title">
+        <span class="line-1">Where Every Child</span>
+        <span class="line-2">Learns, Grows &</span>
+        <span class="line-3">Laughs Together!</span>
+      </h1>
+      <p class="hero-sub">
+        Welcome to <strong>Learn 'N Laugh Kids Academy</strong> — a nurturing haven where curiosity blossoms, creativity flourishes, and every day is an adventure filled with joy and discovery.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">🎓 Apply for Admission</a>
+        <a href="#activities" class="btn-secondary">🎯 Explore Activities</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right">
+      <div class="school-3d-container">
+        <div class="school-3d">
+          <svg class="school-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <!-- Sky / Background -->
+            <defs>
+              <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#C7ECFF;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#FFF9F0;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="roofGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#FF8FAB;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#E84C8B;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="wallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#FFF0F7;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="grassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#6BCB77;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#4CAF57;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="doorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#FFD93D;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#FF8C42;stop-opacity:1" />
+              </linearGradient>
+              <filter id="softShadow">
+                <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.15)"/>
+              </filter>
+              <filter id="glowPink">
+                <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="rgba(255,107,157,0.5)"/>
+              </filter>
+            </defs>
+
+            <!-- Sky BG -->
+            <rect width="500" height="500" fill="url(#skyGrad)" rx="30"/>
+
+            <!-- Sun -->
+            <circle cx="420" cy="80" r="40" fill="#FFD93D" opacity="0.9">
+              <animate attributeName="r" values="40;44;40" dur="3s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="420" cy="80" r="52" fill="#FFD93D" opacity="0.2">
+              <animate attributeName="r" values="52;60;52" dur="3s" repeatCount="indefinite"/>
+            </circle>
+            <!-- Sun rays -->
+            <g opacity="0.6" transform="translate(420,80)">
+              <rect x="-2" y="-68" width="4" height="16" fill="#FFD93D" rx="2"><animateTransform attributeName="transform" type="rotate" values="0;360" dur="20s" repeatCount="indefinite"/></rect>
+            </g>
+
+            <!-- Clouds -->
+            <g opacity="0.9">
+              <ellipse cx="80" cy="90" rx="45" ry="22" fill="white"/>
+              <ellipse cx="110" cy="80" rx="35" ry="22" fill="white"/>
+              <ellipse cx="60" cy="82" rx="28" ry="18" fill="white"/>
+              <animateTransform attributeName="transform" type="translate" values="0 0;8 0;0 0" dur="6s" repeatCount="indefinite"/>
+            </g>
+            <g opacity="0.8">
+              <ellipse cx="340" cy="65" rx="38" ry="18" fill="white"/>
+              <ellipse cx="365" cy="57" rx="28" ry="18" fill="white"/>
+              <ellipse cx="322" cy="60" rx="22" ry="15" fill="white"/>
+              <animateTransform attributeName="transform" type="translate" values="0 0;-6 0;0 0" dur="8s" repeatCount="indefinite"/>
+            </g>
+
+            <!-- Grass Base -->
+            <ellipse cx="250" cy="470" rx="240" ry="60" fill="url(#grassGrad)" opacity="0.85"/>
+            <rect x="10" y="440" width="480" height="60" fill="url(#grassGrad)" rx="8"/>
+
+            <!-- Flowers in grass -->
+            <g>
+              <circle cx="60" cy="445" r="6" fill="#FF6B9D"/><rect x="58" y="445" width="4" height="12" fill="#6BCB77" rx="2"/>
+              <circle cx="80" cy="448" r="5" fill="#FFD93D"/><rect x="78" y="448" width="4" height="10" fill="#6BCB77" rx="2"/>
+              <circle cx="420" cy="446" r="6" fill="#A29BFE"/><rect x="418" y="446" width="4" height="12" fill="#6BCB77" rx="2"/>
+              <circle cx="445" cy="449" r="5" fill="#FF8C42"/><rect x="443" y="449" width="4" height="10" fill="#6BCB77" rx="2"/>
+            </g>
+
+            <!-- SCHOOL BUILDING - Main Body (3D effect) -->
+            <!-- Side wall (3D depth) -->
+            <polygon points="380,380 420,350 420,200 380,230" fill="#FFD8E8" opacity="0.8" filter="url(#softShadow)"/>
+            <!-- Front wall -->
+            <rect x="100" y="230" width="280" height="210" fill="url(#wallGrad)" rx="4" filter="url(#softShadow)"/>
+            <!-- Side shadow overlay -->
+            <polygon points="380,230 380,440 420,410 420,200" fill="rgba(0,0,0,0.05)"/>
+
+            <!-- ROOF (3D effect) -->
+            <!-- Roof side -->
+            <polygon points="380,230 420,200 460,165 420,130" fill="#D63F79" opacity="0.8"/>
+            <!-- Roof front -->
+            <polygon points="70,230 380,230 420,130 110,130" fill="url(#roofGrad)" rx="4"/>
+            <!-- Roof overhang line -->
+            <line x1="70" y1="232" x2="380" y2="232" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
+
+            <!-- Flag on top -->
+            <line x1="245" y1="90" x2="245" y2="135" stroke="#888" stroke-width="3"/>
+            <polygon points="245,90 280,105 245,118" fill="#FF6B9D">
+              <animateTransform attributeName="transform" type="rotate" values="-5 245 105;5 245 105;-5 245 105" dur="2s" repeatCount="indefinite"/>
+            </polygon>
+
+            <!-- WINDOWS -->
+            <!-- Window 1 -->
+            <rect x="125" y="268" width="60" height="55" fill="#74B9FF" rx="8" opacity="0.9"/>
+            <rect x="125" y="268" width="60" height="55" fill="rgba(255,255,255,0.3)" rx="8"/>
+            <line x1="155" y1="268" x2="155" y2="323" stroke="white" stroke-width="2.5" opacity="0.8"/>
+            <line x1="125" y1="293" x2="185" y2="293" stroke="white" stroke-width="2.5" opacity="0.8"/>
+            <rect x="122" y="265" width="66" height="61" fill="none" stroke="#E84C8B" stroke-width="3" rx="10"/>
+
+            <!-- Window 2 -->
+            <rect x="220" y="268" width="60" height="55" fill="#74B9FF" rx="8" opacity="0.9"/>
+            <rect x="220" y="268" width="60" height="55" fill="rgba(255,255,255,0.3)" rx="8"/>
+            <line x1="250" y1="268" x2="250" y2="323" stroke="white" stroke-width="2.5" opacity="0.8"/>
+            <line x1="220" y1="293" x2="280" y2="293" stroke="white" stroke-width="2.5" opacity="0.8"/>
+            <rect x="217" y="265" width="66" height="61" fill="none" stroke="#4ECDC4" stroke-width="3" rx="10"/>
+
+            <!-- Window 3 -->
+            <rect x="315" y="268" width="60" height="55" fill="#74B9FF" rx="8" opacity="0.9"/>
+            <rect x="315" y="268" width="60" height="55" fill="rgba(255,255,255,0.3)" rx="8"/>
+            <line x1="345" y1="268" x2="345" y2="323" stroke="white" stroke-width="2.5" opacity="0.8"/>
+            <line x1="315" y1="293" x2="375" y2="293" stroke="white" stroke-width="2.5" opacity="0.8"/>
+            <rect x="312" y="265" width="66" height="61" fill="none" stroke="#6BCB77" stroke-width="3" rx="10"/>
+
+            <!-- MAIN DOOR -->
+            <rect x="190" y="355" width="80" height="85" fill="url(#doorGrad)" rx="12 12 0 0"/>
+            <rect x="186" y="351" width="88" height="89" fill="none" stroke="#FF6B9D" stroke-width="3" rx="14 14 2 2"/>
+            <!-- Door window -->
+            <ellipse cx="230" cy="378" rx="22" ry="22" fill="#74B9FF" opacity="0.8"/>
+            <ellipse cx="230" cy="378" rx="22" ry="22" fill="rgba(255,255,255,0.3)"/>
+            <!-- Door knob -->
+            <circle cx="268" cy="400" r="5" fill="#E84C8B"/>
+            <!-- Step -->
+            <rect x="175" y="437" width="110" height="12" fill="#FFB3D1" rx="4"/>
+            <rect x="183" y="431" width="94" height="12" fill="#FFD8E8" rx="4"/>
+
+            <!-- SCHOOL NAME SIGN -->
+            <rect x="105" y="195" width="270" height="30" fill="rgba(255,107,157,0.15)" rx="8"/>
+            <rect x="107" y="197" width="266" height="26" fill="rgba(255,255,255,0.6)" rx="6"/>
+            <text x="240" y="215" text-anchor="middle" fill="#E84C8B" font-size="11" font-weight="800" font-family="Arial">LEARN 'N LAUGH KIDS ACADEMY</text>
+
+            <!-- TREE Left -->
+            <rect x="30" y="360" width="14" height="80" fill="#8B6914" rx="4"/>
+            <ellipse cx="37" cy="340" rx="36" ry="38" fill="#4CAF57"/>
+            <ellipse cx="30" cy="355" rx="24" ry="26" fill="#6BCB77"/>
+            <ellipse cx="48" cy="348" rx="22" ry="24" fill="#5BC267"/>
+
+            <!-- TREE Right -->
+            <rect x="448" y="360" width="14" height="80" fill="#8B6914" rx="4"/>
+            <ellipse cx="455" cy="340" rx="32" ry="35" fill="#4CAF57"/>
+            <ellipse cx="448" cy="353" rx="22" ry="23" fill="#6BCB77"/>
+            <ellipse cx="464" cy="346" rx="20" ry="22" fill="#5BC267"/>
+
+            <!-- Bushes -->
+            <ellipse cx="115" cy="445" rx="30" ry="18" fill="#5BC267"/>
+            <ellipse cx="100" cy="450" rx="22" ry="15" fill="#6BCB77"/>
+            <ellipse cx="385" cy="445" rx="30" ry="18" fill="#5BC267"/>
+            <ellipse cx="400" cy="450" rx="22" ry="15" fill="#6BCB77"/>
+
+            <!-- Path to door -->
+            <ellipse cx="230" cy="460" rx="45" ry="12" fill="rgba(255,200,150,0.5)"/>
+
+            <!-- Decorative stars -->
+            <g filter="url(#glowPink)">
+              <text x="90" y="170" font-size="18" fill="#FFD93D">★</text>
+              <text x="390" y="175" font-size="16" fill="#FF6B9D">★</text>
+              <text x="165" y="155" font-size="12" fill="#74B9FF">✦</text>
+              <text x="340" y="160" font-size="12" fill="#6BCB77">✦</text>
+            </g>
+
+            <!-- ABC on building -->
+            <text x="140" y="355" font-size="14" fill="#FF6B9D" font-weight="800" font-family="Arial">ABC</text>
+            <text x="295" y="355" font-size="14" fill="#74B9FF" font-weight="800" font-family="Arial">123</text>
+
+            <!-- Kids at the window -->
+            <circle cx="145" cy="283" r="10" fill="#FFD4A3"/>
+            <circle cx="155" cy="283" r="10" fill="#FFB347"/>
+            <circle cx="240" cy="283" r="9" fill="#FFDAB9"/>
+            <circle cx="250" cy="283" r="9" fill="#DDA0DD"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     ABOUT SECTION
+========================= -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-visual-col reveal-left">
+        <div class="about-big-card">
+          <div class="about-emoji-grid">
+            <div class="emoji-card" style="--bg1:#FFF0F7;--bg2:#FFE0EE">🎨<span class="label">Art</span></div>
+            <div class="emoji-card" style="--bg1:#F0FAFF;--bg2:#E0F5FF">📚<span class="label">Learn</span></div>
+            <div class="emoji-card" style="--bg1:#F0FFF4;--bg2:#DFFFEB">🌱<span class="label">Grow</span></div>
+            <div class="emoji-card" style="--bg1:#FFF8E7;--bg2:#FFEFC2">⭐<span class="label">Excel</span></div>
+            <div class="emoji-card" style="--bg1:#F5F0FF;--bg2:#EBE0FF">🎵<span class="label">Music</span></div>
+            <div class="emoji-card" style="--bg1:#FFF0F7;--bg2:#FFE5ED">❤️<span class="label">Care</span></div>
+            <div class="emoji-card" style="--bg1:#F0FAFF;--bg2:#E5F5FF">🌟<span class="label">Shine</span></div>
+            <div class="emoji-card" style="--bg1:#F0FFF5;--bg2:#E5FFE8">🏆<span class="label">Achieve</span></div>
+            <div class="emoji-card" style="--bg1:#FFF5E0;--bg2:#FFE8C2">🎉<span class="label">Celebrate</span></div>
+          </div>
+          <div class="mv-cards">
+            <div class="mv-card vision">
+              <div class="mv-icon">🔭</div>
+              <h3>Our Vision</h3>
+              <p>To nurture every child into a confident, creative, and compassionate global citizen ready for tomorrow's world.</p>
+            </div>
+            <div class="mv-card mission">
+              <div class="mv-icon">🎯</div>
+              <h3>Our Mission</h3>
+              <p>Providing holistic early education through play-based learning, emotional intelligence, and joyful exploration.</p>
+            </div>
+          </div>
+          <div class="about-floating-badge">
+            <div class="inner">
+              <div class="num">12+</div>
+              <div class="txt">Years of<br>Excellence</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text-col reveal-right">
+        <div class="section-tag">🏫 About Our School</div>
+        <h2 class="section-title">A Place Where <span>Every Child Shines</span></h2>
+        <p class="section-subtitle">
+          At Learn 'N Laugh Kids Academy, we believe every child is a unique star waiting to twinkle. Our internationally inspired curriculum blends academics with arts, sports, and social-emotional development.
+        </p>
+
+        <div class="why-list">
+          <div class="why-item reveal" style="transition-delay:0.1s">
+            <div class="why-icon" style="background:linear-gradient(135deg,#FFF0F7,#FFD0E5)">🌟</div>
+            <div class="why-text">
+              <h4>CBSE-Aligned Curriculum with Holistic Focus</h4>
+              <p>Our curriculum balances academics with creative arts, physical wellness, and emotional intelligence for complete child development.</p>
+            </div>
+          </div>
+          <div class="why-item reveal" style="transition-delay:0.2s">
+            <div class="why-icon" style="background:linear-gradient(135deg,#F0FAFF,#D0EEFF)">🛡️</div>
+            <div class="why-text">
+              <h4>Safe, Nurturing & Stimulating Environment</h4>
+              <p>CCTV-secured premises with child-safe materials, trained caregivers, and a warm atmosphere that feels like a second home.</p>
+            </div>
+          </div>
+          <div class="why-item reveal" style="transition-delay:0.3s">
+            <div class="why-icon" style="background:linear-gradient(135deg,#F0FFF4,#D0FFD8)">📱</div>
+            <div class="why-text">
+              <h4>Regular Parent Communication & Updates</h4>
+              <p>Daily activity reports, monthly progress cards, and open parent-teacher sessions keep you connected to your child's journey.</p>
+            </div>
+          </div>
+          <div class="why-item reveal" style="transition-delay:0.4s">
+            <div class="why-icon" style="background:linear-gradient(135deg,#FFF8E7,#FFE8C2)">🏆</div>
+            <div class="why-text">
+              <h4>Award-Winning Early Education Programs</h4>
+              <p>Recognized as the "Best Kids Academy" for 3 consecutive years with over 500+ happy families across the community.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     ACTIVITIES SECTION
+========================= -->
+<section id="activities">
+  <div class="section-inner">
+    <div class="activities-header reveal">
+      <div class="section-tag">🎯 Programs & Activities</div>
+      <h2 class="section-title">Fun-Filled <span>Learning Activities</span></h2>
+      <p class="section-subtitle" style="margin:0 auto">Every activity is thoughtfully designed to spark curiosity, build skills, and create lasting memories for your little ones.</p>
+    </div>
+
+    <div class="activities-grid">
+      <!-- Drawing & Art -->
+      <div class="activity-card reveal" style="--card-grad:linear-gradient(135deg,#FF6B9D,#FF8FAB);--tag-bg:rgba(255,107,157,0.08);--tag-border:rgba(255,107,157,0.2);--tag-color:var(--pink-dark);transition-delay:0.05s">
+        <div class="act-top"><span class="act-icon">🎨</span><span class="act-number">01</span></div>
+        <h3 class="act-text">Drawing & Art</h3>
+        <p class="act-desc">Unleash creativity through painting, clay modeling, and mixed media art. Children develop fine motor skills and self-expression through colorful masterpieces.</p>
+        <span class="act-tag">🖌️ Creative Arts</span>
+      </div>
+
+      <!-- Dance -->
+      <div class="activity-card reveal" style="--card-grad:linear-gradient(135deg,#74B9FF,#0984E3);--tag-bg:rgba(116,185,255,0.08);--tag-border:rgba(116,185,255,0.2);--tag-color:var(--blue-sky-dark);transition-delay:0.1s">
+        <div class="act-top"><span class="act-icon">💃</span><span class="act-number">02</span></div>
+        <h3 class="act-text">Dance & Movement</h3>
+        <p class="act-desc">Classical, folk, and freestyle dance sessions help children develop coordination, rhythm, confidence, and a lifelong love for performing arts.</p>
+        <span class="act-tag">🎵 Performing Arts</span>
+      </div>
+
+      <!-- Music -->
+      <div class="activity-card reveal" style="--card-grad:linear-gradient(135deg,#6BCB77,#4CAF57);--tag-bg:rgba(107,203,119,0.08);--tag-border:rgba(107,203,119,0.2);--tag-color:var(--green-dark);transition-delay:0.15s">
+        <div class="act-top"><span class="act-icon">🎹</span><span class="act-number">03</span></div>
+        <h3 class="act-text">Music & Rhymes</h3>
+        <p class="act-desc">Keyboard, rhythm instruments, and vocal training nurture musical intelligence. Singing nursery rhymes builds language skills and emotional development.</p>
+        <span class="act-tag">🎼 Music Education</span>
+      </div>
+
+      <!-- Storytelling -->
+      <div class="activity-card reveal" style="--card-grad:linear-gradient(135deg,#A29BFE,#6C5CE7);--tag-bg:rgba(162,155,254,0.08);--tag-border:rgba(162,155,254,0.2);--tag-color:#6C5CE7;transition-delay:0.2s">
+        <div class="act-top"><span class="act-icon">📖</span><span class="act-number">04</span></div>
+        <h3 class="act-text">Storytelling & Drama</h3>
+        <p class="act-desc">Interactive story sessions, puppet shows, and mini plays build vocabulary, imagination, empathy, and public speaking confidence in every child.</p>
+        <span class="act-tag">🎭 Language Arts</span>
+      </div>
+
+      <!-- Games -->
+      <div class="activity-card reveal" style="--card-grad:linear-gradient(135deg,#FFD93D,#FF8C42);--tag-bg:rgba(255,217,61,0.08);--tag-border:rgba(255,217,61,0.3);--tag-color:#CC6600;transition-delay:0.25s">
+        <div class="act-top"><span class="act-icon">🏃</span><span class="act-number">05</span></div>
+        <h3 class="act-text">Sports & Games</h3>
+        <p class="act-desc">Outdoor games, yoga, gymnastics, and team sports develop physical health, sportsmanship, leadership, and collaborative spirit in young minds.</p>
+        <span class="act-tag">⚽ Physical Education</span>
+      </div>
+
+      <!-- Learning Activities -->
+      <div class="activity-card reveal" style="--card-grad:linear-gradient(135deg,#4ECDC4,#2BA8A0);--tag-bg:rgba(78,205,196,0.08);--tag-border:rgba(78,205,196,0.2);--tag-color:var(--blue-dark);transition-delay:0.3s">
+        <div class="act-top"><span class="act-icon">🔬</span><span class="act-number">06</span></div>
+        <h3 class="act-text">STEM Discovery Lab</h3>
+        <p class="act-desc">Hands-on science experiments, number puzzles, and coding basics introduce children to STEM concepts through playful, inquiry-based exploration sessions.</p>
+        <span class="act-tag">🧪 STEM Learning</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     TEACHERS SECTION
+========================= -->
+<section id="teachers">
+  <div class="section-inner">
+    <div class="teachers-header reveal">
+      <div class="section-tag">👩‍🏫 Our Educators</div>
+      <h2 class="section-title">Meet Our <span>Wonderful Teachers</span></h2>
+      <p class="section-subtitle" style="margin:0 auto">Our passionate, highly qualified educators are dedicated to creating magical learning moments for every child every single day.</p>
+    </div>
+
+    <div class="teachers-grid">
+      <!-- Teacher 1 -->
+      <div class="teacher-card reveal" style="transition-delay:0.1s">
+        <div class="teacher-header" style="background:linear-gradient(135deg,#FFF0F7,#FFD8EE)">
+          <div class="teacher-decorations">
+            <span class="tdec" style="top:20px;left:20px;animation-delay:0s">🌸</span>
+            <span class="tdec" style="top:15px;right:25px;animation-delay:-1s">⭐</span>
+            <span class="tdec" style="bottom:20px;left:30px;animation-delay:-2s">🎨</span>
+            <span class="tdec" style="bottom:15px;right:20px;animation-delay:-0.5s">🌺</span>
+          </div>
+          <div class="teacher-avatar-container">
+            <div class="teacher-avatar" style="--bg1:#FFD8EE;--bg2:#FFB3D1">👩‍🏫</div>
+            <div class="teacher-badge-ring"></div>
+          </div>
+        </div>
+        <div class="teacher-body">
+          <div class="teacher-name">Ms. Priya Sharma</div>
+          <div class="teacher-role" style="--accent:var(--pink)">Head Educator & Founder</div>
+          <div class="teacher-quals">
+            <span class="qual-chip" style="--chip-bg:rgba(255,107,157,0.1);--chip-color:var(--pink-dark);--chip-border:rgba(255,107,157,0.2)">M.Ed Early Childhood</span>
+            <span class="qual-chip" style="--chip-bg:rgba(255,107,157,0.08);--chip-color:var(--pink-dark);--chip-border:rgba(255,107,157,0.15)">Montessori Certified</span>
+            <span class="qual-chip" style="--chip-bg:rgba(255,107,157,0.06);--chip-color:var(--pink-dark);--chip-border:rgba(255,107,157,0.12)">Child Psychology</span>
+          </div>
+          <p class="teacher-exp">Dedicated to igniting the spark of curiosity in every child. <strong>15+ years</strong> of transforming young learners into confident, creative thinkers.</p>
+          <div class="teacher-footer">
+            <span class="exp-badge" style="--badge1:var(--pink);--badge2:var(--pink-dark)">15 yrs exp</span>
+            <span class="teacher-emoji-row">🌸💕🎨</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teacher 2 -->
+      <div class="teacher-card reveal" style="transition-delay:0.2s">
+        <div class="teacher-header" style="background:linear-gradient(135deg,#EEF9FF,#D0EEFF)">
+          <div class="teacher-decorations">
+            <span class="tdec" style="top:20px;left:20px;animation-delay:-1.5s">🎵</span>
+            <span class="tdec" style="top:15px;right:25px;animation-delay:0s">📚</span>
+            <span class="tdec" style="bottom:20px;left:30px;animation-delay:-2.5s">🌊</span>
+            <span class="tdec" style="bottom:15px;right:20px;animation-delay:-1s">✨</span>
+          </div>
+          <div class="teacher-avatar-container">
+            <div class="teacher-avatar" style="--bg1:#D0EEFF;--bg2:#A8E0FF">🧑‍🏫</div>
+            <div class="teacher-badge-ring" style="animation-direction:reverse"></div>
+          </div>
+        </div>
+        <div class="teacher-body">
+          <div class="teacher-name">Mr. Arjun Menon</div>
+          <div class="teacher-role" style="--accent:var(--blue-sky-dark)">Sports & STEM Coordinator</div>
+          <div class="teacher-quals">
+            <span class="qual-chip" style="--chip-bg:rgba(116,185,255,0.1);--chip-color:var(--blue-sky-dark);--chip-border:rgba(116,185,255,0.2)">B.P.Ed Sports Science</span>
+            <span class="qual-chip" style="--chip-bg:rgba(116,185,255,0.08);--chip-color:var(--blue-sky-dark);--chip-border:rgba(116,185,255,0.15)">STEM Facilitator</span>
+            <span class="qual-chip" style="--chip-bg:rgba(116,185,255,0.06);--chip-color:var(--blue-sky-dark);--chip-border:rgba(116,185,255,0.12)">NLP Practitioner</span>
+          </div>
+          <p class="teacher-exp">Champions physical wellness and scientific thinking through hands-on learning. <strong>10+ years</strong> building confident young athletes and curious scientists.</p>
+          <div class="teacher-footer">
+            <span class="exp-badge" style="--badge1:var(--blue-sky);--badge2:var(--blue-sky-dark)">10 yrs exp</span>
+            <span class="teacher-emoji-row">⚽🔬📐</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teacher 3 -->
+      <div class="teacher-card reveal" style="transition-delay:0.3s">
+        <div class="teacher-header" style="background:linear-gradient(135deg,#F0FFF4,#D0FFD8)">
+          <div class="teacher-decorations">
+            <span class="tdec" style="top:20px;left:20px;animation-delay:-0.5s">🌿</span>
+            <span class="tdec" style="top:15px;right:25px;animation-delay:-2s">💚</span>
+            <span class="tdec" style="bottom:20px;left:30px;animation-delay:-1s">🎭</span>
+            <span class="tdec" style="bottom:15px;right:20px;animation-delay:-3s">🌻</span>
+          </div>
+          <div class="teacher-avatar-container">
+            <div class="teacher-avatar" style="--bg1:#D0FFD8;--bg2:#A8F5B0">👩‍🎤</div>
+            <div class="teacher-badge-ring"></div>
+          </div>
+        </div>
+        <div class="teacher-body">
+          <div class="teacher-name">Ms. Deepa Krishnan</div>
+          <div class="teacher-role" style="--accent:var(--green-dark)">Arts, Music & Drama Lead</div>
+          <div class="teacher-quals">
+            <span class="qual-chip" style="--chip-bg:rgba(107,203,119,0.1);--chip-color:var(--green-dark);--chip-border:rgba(107,203,119,0.2)">B.A Fine Arts</span>
+            <span class="qual-chip" style="--chip-bg:rgba(107,203,119,0.08);--chip-color:var(--green-dark);--chip-border:rgba(107,203,119,0.15)">Carnatic Music Grade 8</span>
+            <span class="qual-chip" style="--chip-bg:rgba(107,203,119,0.06);--chip-color:var(--green-dark);--chip-border:rgba(107,203,119,0.12)">Drama & Theatre</span>
+          </div>
+          <p class="teacher-exp">A multi-talented artist bringing music, dance, and theatre to life for young learners. <strong>8+ years</strong> of nurturing children's artistic voices with boundless joy.</p>
+          <div class="teacher-footer">
+            <span class="exp-badge" style="--badge1:var(--green);--badge2:var(--green-dark)">8 yrs exp</span>
+            <span class="teacher-emoji-row">🎨🎵🎭</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     EVENTS SECTION
+========================= -->
+<section id="events">
+  <div class="section-inner">
+    <div class="events-layout">
+      <div class="events-main">
+        <div class="section-tag">🎉 Latest News</div>
+        <h2 class="section-title reveal">Events & <span>Announcements</span></h2>
+        <div id="eventsList">
+          <div class="event-item reveal" style="--line-color:var(--pink);--date-bg:linear-gradient(135deg,var(--pink-light),var(--pink));--tag-bg:rgba(255,107,157,0.08);--tag-col:var(--pink-dark)">
+            <div class="event-date-box"><span class="day">15</span><span class="month">Jul</span></div>
+            <div class="event-info">
+              <h4>🌟 Annual Day Celebration 2025</h4>
+              <p>A grand celebration showcasing our students' talents in dance, drama, music, and sports. All parents are warmly invited to witness their child shine!</p>
+              <span class="etag">🎭 Annual Event</span>
+            </div>
+          </div>
+          <div class="event-item reveal" style="--line-color:var(--blue-sky);--date-bg:linear-gradient(135deg,var(--blue-light),var(--blue-sky));--tag-bg:rgba(116,185,255,0.08);--tag-col:var(--blue-sky-dark)">
+            <div class="event-date-box" style="background:linear-gradient(135deg,var(--blue-light),var(--blue-sky))"><span class="day">22</span><span class="month">Jul</span></div>
+            <div class="event-info">
+              <h4>⚽ Little Champions Sports Day</h4>
+              <p>A fun-filled day of friendly athletic competitions, relay races, yoga demonstrations, and outdoor games for all age groups.</p>
+              <span class="etag" style="--tag-bg:rgba(116,185,255,0.08);--tag-col:var(--blue-sky-dark)">🏅 Sports Event</span>
+            </div>
+          </div>
+          <div class="event-item reveal" style="--line-color:var(--green);--date-bg:linear-gradient(135deg,var(--green-light),var(--green));--tag-bg:rgba(107,203,119,0.08);--tag-col:var(--green-dark)">
+            <div class="event-date-box" style="background:linear-gradient(135deg,var(--green-light),var(--green))"><span class="day">05</span><span class="month">Aug</span></div>
+            <div class="event-info">
+              <h4>🎨 Art & Creativity Exhibition</h4>
+              <p>A vibrant showcase of student artworks, science projects, and creative crafts. Come celebrate the incredible imagination of our little artists!</p>
+              <span class="etag" style="--tag-bg:rgba(107,203,119,0.08);--tag-col:var(--green-dark)">🖼️ Exhibition</span>
+            </div>
+          </div>
+          <div class="event-item reveal" style="--line-color:var(--yellow);--date-bg:linear-gradient(135deg,#FFE8A0,#FFD93D);--tag-bg:rgba(255,217,61,0.1);--tag-col:#996600">
+            <div class="event-date-box" style="background:linear-gradient(135deg,#FFE8A0,#FFD93D)"><span class="day">20</span><span class="month">Aug</span></div>
+            <div class="event-info">
+              <h4>🎓 Graduation Ceremony – Playgroup 2025</h4>
+              <p>Celebrating the milestone journey of our youngest graduates as they proudly move up to the next phase of their learning adventure.</p>
+              <span class="etag" style="--tag-bg:rgba(255,217,61,0.1);--tag-col:#996600">🏛️ Graduation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="admin-panel reveal-right">
+        <h3>⚙️ Event Manager</h3>
+        <p>Add new events easily — no coding needed!</p>
+        <div class="form-group">
+          <label>Event Title</label>
+          <input type="text" id="evTitle" placeholder="e.g. Science Fair 2025">
+        </div>
+        <div class="form-group">
+          <label>Date</label>
+          <input type="date" id="evDate">
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <textarea id="evDesc" placeholder="Brief event description..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Category</label>
+          <select id="evCat">
+            <option value="annual">🎭 Annual Event</option>
+            <option value="sports">🏅 Sports Event</option>
+            <option value="art">🎨 Art & Culture</option>
+            <option value="academic">📚 Academic</option>
+            <option value="celebration">🎉 Celebration</option>
+          </select>
+        </div>
+        <button class="btn-add-event" onclick="addEvent()">+ Add Event to List</button>
+        <div class="events-feedback" id="evFeedback"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     GALLERY SECTION
+========================= -->
+<section id="gallery">
+  <div class="section-inner">
+    <div class="gallery-header reveal">
+      <div class="section-tag">📸 Our Memories</div>
+      <h2 class="section-title">Photo & <span>Video Gallery</span></h2>
+      <p class="section-subtitle" style="margin:0 auto">A glimpse into the joyful, colorful world inside Learn 'N Laugh Kids Academy.</p>
+    </div>
+
+    <div class="gallery-grid reveal">
+      <div class="gallery-item" style="background:linear-gradient(135deg,#FFF0F7,#FFD8EE)" onclick="openLightbox('🎨','Art & Creativity Class','Children exploring colors, shapes, and their boundless creativity in our fully-equipped art studio.')">
+        <div class="gallery-inner">🎨🖌️🌈</div>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+        <div class="gallery-label">Art & Creativity Class</div>
+      </div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#EEF9FF,#D0EEFF)" onclick="openLightbox('📚','Library & Story Time','Cozy reading corners where imagination takes flight through wonderful stories and adventures.')">
+        <div class="gallery-inner">📚</div>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+        <div class="gallery-label">Story Time</div>
+      </div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#F0FFF4,#D0FFD8)" onclick="openLightbox('🏃','Sports & Play Area','Our spacious outdoor playground where kids develop physical skills, teamwork, and friendship.')">
+        <div class="gallery-inner">⚽</div>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+        <div class="gallery-label">Sports Day</div>
+      </div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#FFF8E7,#FFE8C2)" onclick="openLightbox('🎵','Music & Dance Studio','Rhythm, melody, and movement — our studio echoes with the joyful sounds of little musicians.')">
+        <div class="gallery-inner">🎵</div>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+        <div class="gallery-label">Music Class</div>
+      </div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#F5F0FF,#EBE0FF)" onclick="openLightbox('🎭','Annual Day Performance','Our Annual Day showcases the incredible talent and confidence of our amazing students.')">
+        <div class="gallery-inner">🎭🌟</div>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+        <div class="gallery-label">Annual Day 2024</div>
+      </div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#FFF0F7,#FFE5ED)" onclick="openLightbox('🔬','Science Discovery Lab','Curious little scientists exploring, experimenting, and discovering the wonders of the world.')">
+        <div class="gallery-inner">🔬</div>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+        <div class="gallery-label">Science Lab</div>
+      </div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#E8FFEE,#D0FDE0)" onclick="openLightbox('🌱','Nature & Garden Club','Growing vegetables, learning about nature, and developing a love for our environment.')">
+        <div class="gallery-inner">🌱</div>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+        <div class="gallery-label">Garden Club</div>
+      </div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#FFF5E0,#FFE8C2)" onclick="openLightbox('🎉','Celebrations & Festivals','Cultural festivals, birthday parties, and special celebrations that bring our school family together.')">
+        <div class="gallery-inner">🎉</div>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+        <div class="gallery-label">Celebrations</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <div class="lightbox-content">
+    <button class="lb-close" onclick="closeLightbox()">✕</button>
+    <div class="lb-emoji" id="lbEmoji">🎨</div>
+    <div class="lb-title" id="lbTitle">Art Class</div>
+    <div class="lb-desc" id="lbDesc">Description here.</div>
+  </div>
+</div>
+
+<!-- ========================
+     PARENT INFO SECTION
+========================= -->
+<section id="parents">
+  <div class="section-inner">
+    <div class="text-center reveal" style="margin-bottom:60px">
+      <div class="section-tag">👨‍👩‍👧 For Parents</div>
+      <h2 class="section-title">Everything You <span>Need to Know</span></h2>
+      <p class="section-subtitle">Complete information to help you make the best decision for your child's bright future.</p>
+    </div>
+
+    <div class="parents-grid">
+      <!-- Admissions -->
+      <div class="info-card admissions reveal" style="transition-delay:0.1s">
+        <div class="ic-icon">🎓</div>
+        <h3>Admission Process</h3>
+        <ul class="admission-steps">
+          <li><span class="step-num">1</span> Fill online/offline enquiry form & school visit</li>
+          <li><span class="step-num">2</span> Child interaction & age-appropriate assessment</li>
+          <li><span class="step-num">3</span> Receive admission offer & fee structure details</li>
+          <li><span class="step-num">4</span> Submit documents & complete fee payment</li>
+          <li><span class="step-num">5</span> Welcome kit & orientation session for parents</li>
+        </ul>
+        <div style="margin-top:20px">
+          <a href="#contact" class="btn-primary" style="font-size:13px;padding:12px 24px;border-radius:14px;display:inline-flex;align-items:center;gap:8px">
+            🚀 Apply Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Timings -->
+      <div class="info-card timings reveal" style="transition-delay:0.2s">
+        <div class="ic-icon">🕐</div>
+        <h3>School Timings</h3>
+        <div class="timing-row"><span class="day">Monday – Friday</span><span class="time">8:30 AM – 1:30 PM</span></div>
+        <div class="timing-row"><span class="day">Extended Care</span><span class="time">1:30 PM – 4:30 PM</span></div>
+        <div class="timing-row"><span class="day">Saturday (Activities)</span><span class="time">9:00 AM – 12:00 PM</span></div>
+        <div class="timing-row"><span class="day">Sunday</span><span class="time">Closed</span></div>
+        <div class="timing-row"><span class="day">Summer Camp</span><span class="time">9:00 AM – 12:30 PM</span></div>
+        <div style="margin-top:18px;padding:14px;background:rgba(116,185,255,0.12);border-radius:14px;border:1px solid rgba(116,185,255,0.2)">
+          <p style="font-size:13px;color:#555;font-weight:600">🚌 <strong>School Bus:</strong> Available for select routes. Contact admin for details & coverage areas.</p>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="info-card contact-info reveal" style="transition-delay:0.3s">
+        <div class="ic-icon">📞</div>
+        <h3>Contact Information</h3>
+        <div class="contact-items">
+          <div class="contact-item"><div class="ci-icon">📍</div>No. 45, Rainbow Street, Tiruppur – 641 601, Tamil Nadu</div>
+          <div class="contact-item"><div class="ci-icon">📞</div>+91 98765 43210 / +91 98765 43211</div>
+          <div class="contact-item"><div class="ci-icon">✉️</div>hello@learnnlaugh.edu.in</div>
+          <div class="contact-item"><div class="ci-icon">🌐</div>www.learnnlaugh.edu.in</div>
+          <div class="contact-item"><div class="ci-icon">🕐</div>Office: Mon–Sat, 8:00 AM – 5:00 PM</div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="info-card faq reveal" style="transition-delay:0.4s">
+        <div class="ic-icon">❓</div>
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What is the minimum age for admission? <span class="faq-arrow">▼</span></button>
+          <div class="faq-a">We accept children from 2 years onwards for Playgroup, 3 years for Nursery, 4 years for LKG, and 5 years for UKG. Children must meet the age criteria as of June 1st of the admission year.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What is the student-to-teacher ratio? <span class="faq-arrow">▼</span></button>
+          <div class="faq-a">We maintain a maximum ratio of 15:1 (students to teacher) to ensure personalized attention and a nurturing environment. Each class also has a dedicated assistant teacher.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Is there a school bus facility available? <span class="faq-arrow">▼</span></button>
+          <div class="faq-a">Yes! We have GPS-tracked, air-conditioned school buses covering major areas around Tiruppur. Each bus has a dedicated female attendant for children's safety. Routes can be discussed during admission.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">How do you communicate progress to parents? <span class="faq-arrow">▼</span></button>
+          <div class="faq-a">We provide daily activity reports via our parent app, monthly progress portfolios with photos, quarterly report cards, and parent-teacher meetings every term. You're always in the loop!</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What safety measures are in place at school? <span class="faq-arrow">▼</span></button>
+          <div class="faq-a">Our campus has 24/7 CCTV surveillance, secure entry/exit with ID verification, trained first-aid staff, child-safe furniture, and regular safety drills. Every child's safety is our top priority.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     CONTACT SECTION
+========================= -->
+<section id="contact">
+  <div class="contact-bg-shapes">
+    <div class="cs-blob csb1"></div>
+    <div class="cs-blob csb2"></div>
+  </div>
+  <div class="section-inner contact-inner">
+    <div class="contact-header reveal">
+      <div class="section-tag" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);color:var(--pink-light)">💌 Get in Touch</div>
+      <h2 class="section-title">Begin Your <span>Child's Journey</span></h2>
+      <p class="section-subtitle">Ready to give your child the best start in life? Reach out to us and we'll guide you through every step of the admission process with love.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-form-wrap reveal-left">
+        <h3>📝 Enquiry Form</h3>
+        <div id="contactFormInner">
+          <form id="contactForm">
+            <div class="cf-group">
+              <label>Parent / Guardian Name</label>
+              <input id="parentName" name="parentName" type="text" placeholder="Your full name" required>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="cf-group">
+                <label>Phone Number</label>
+                <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" required>
+              </div>
+              <div class="cf-group">
+                <label>Email Address</label>
+                <input id="email" name="email" type="email" placeholder="you@email.com" required>
+              </div>
+            </div>
+            <div class="cf-group">
+              <label>Child's Name</label>
+              <input id="childName" name="childName" type="text" placeholder="Child's full name">
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="cf-group">
+                <label>Child's Age</label>
+                <select id="childAge" name="childAge">
+                  <option value="">Select age</option>
+                  <option>2 Years – Playgroup</option>
+                  <option>3 Years – Nursery</option>
+                  <option>4 Years – LKG</option>
+                  <option>5 Years – UKG</option>
+                </select>
+              </div>
+              <div class="cf-group">
+                <label>Preferred Session</label>
+                <select id="session" name="session">
+                  <option value="">Select session</option>
+                  <option>Morning (8:30 AM)</option>
+                  <option>Extended (Till 4:30 PM)</option>
+                </select>
+              </div>
+            </div>
+            <div class="cf-group">
+              <label>Message / Questions</label>
+              <textarea id="message" name="message" placeholder="Tell us about your child and any questions you have..."></textarea>
+            </div>
+            <button type="submit" class="btn-send">
+              🚀 Send Enquiry
+            </button>
+            <div id="formError" class="form-error" style="display:none;margin-top:14px;color:var(--pink-dark);"></div>
+          </form>
+        </div>
+        <div class="form-success" id="formSuccess">
+          🎉 Thank you! We've received your enquiry.<br>
+          Our admissions team will contact you within <strong>24 hours</strong>.<br><br>
+          We look forward to welcoming your child to our family! 💕
+        </div>
+      </div>
+
+      <div class="contact-info-col reveal-right">
+        <h3>📍 Find Us</h3>
+        <div class="cinfo-cards">
+          <div class="cinfo-card" style="--icon-grad:linear-gradient(135deg,var(--pink),var(--pink-dark))">
+            <div class="cic-icon">📍</div>
+            <div class="cic-text">
+              <div class="label">Address</div>
+              <div class="value">No. 45, Rainbow Street<br>Tiruppur – 641 601, TN</div>
+            </div>
+          </div>
+          <div class="cinfo-card" style="--icon-grad:linear-gradient(135deg,var(--blue-sky),var(--blue-sky-dark))">
+            <div class="cic-icon">📞</div>
+            <div class="cic-text">
+              <div class="label">Phone</div>
+              <div class="value">+91 98765 43210</div>
+            </div>
+          </div>
+          <div class="cinfo-card" style="--icon-grad:linear-gradient(135deg,var(--green),var(--green-dark))">
+            <div class="cic-icon">✉️</div>
+            <div class="cic-text">
+              <div class="label">Email</div>
+              <div class="value">hello@learnnlaugh.edu.in</div>
+            </div>
+          </div>
+          <div class="cinfo-card" style="--icon-grad:linear-gradient(135deg,var(--yellow),var(--orange))">
+            <div class="cic-icon">🕐</div>
+            <div class="cic-text">
+              <div class="label">Office Hours</div>
+              <div class="value">Mon–Sat: 8:00 AM – 5:00 PM</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-placeholder">
+          <div class="map-icon">🗺️</div>
+          <h4>Learn 'N Laugh Kids Academy</h4>
+          <p>No. 45, Rainbow Street, Tiruppur – 641 601, Tamil Nadu, India</p>
+          <a href="https://maps.google.com/?q=Tiruppur,Tamil+Nadu,India" target="_blank" class="btn-map">
+            📌 Open in Google Maps
+          </a>
+        </div>
+
+        <h4 style="color:white;font-weight:800;margin-bottom:14px;font-family:var(--font-display)">🌐 Connect With Us</h4>
+        <div class="social-row">
+          <a href="https://wa.me/919876543210" class="social-btn sb-wa" target="_blank">💬 WhatsApp</a>
+          <a href="#" class="social-btn sb-fb" target="_blank">📘 Facebook</a>
+          <a href="#" class="social-btn sb-ig" target="_blank">📸 Instagram</a>
+          <a href="#" class="social-btn sb-yt" target="_blank">▶️ YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     FOOTER
+========================= -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-wrap">
+          <div class="logo-icon">🌟</div>
+          <div class="logo-text">
+            <h2>Learn 'N Laugh Kids Academy</h2>
+            <p>Where Learning Meets Joy</p>
+          </div>
+        </div>
+        <p>Nurturing curious minds and joyful hearts since 2013. We believe every child deserves a magical start to their educational journey, filled with wonder, creativity, and unconditional love.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Our School</a></li>
+          <li><a href="#activities">Activities & Programs</a></li>
+          <li><a href="#teachers">Our Teachers</a></li>
+          <li><a href="#events">Events & News</a></li>
+          <li><a href="#gallery">Photo Gallery</a></li>
+          <li><a href="#contact">Admissions</a></li>
+        </ul>
+      </div> 
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">📍 Tiruppur, Tamil Nadu</a></li>
+          <li><a href="tel:+919876543210">📞 +91 98765 43210</a></li>
+          <li><a href="mailto:hello@learnnlaugh.edu.in">✉️ Email Us</a></li>
+          <li><a href="https://wa.me/919876543210">💬 WhatsApp</a></li>
+          <li><a href="#">📸 Instagram</a></li>
+          <li><a href="#">📘 Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Learn 'N Laugh Kids Academy. Made with <span class="hearts">❤️</span> for amazing kids.</span>
+      <span>Tiruppur, Tamil Nadu, India 🇮🇳</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========================
+     JAVASCRIPT
+========================= -->
+<script src="script.js"></script>
+</html>
