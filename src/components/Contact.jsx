@@ -1,10 +1,10 @@
 import { useReveal } from '../hooks'
 
 const ITEMS = [
-  { icon: '📍', title: 'Visit Us',      text: '123 Sunshine Boulevard, Greenfield Park\nMetroCity, MC 45678' },
-  { icon: '📞', title: 'Call Us',       text: '+1 (555) 123-4567\n+1 (555) 987-6543'                        },
-  { icon: '✉️', title: 'Email Us',      text: 'admissions@learnnlaugh.edu\ninfo@learnnlaugh.edu'             },
-  { icon: '⏰', title: 'School Hours',  text: 'Mon – Fri: 7:30 AM – 4:00 PM\nSaturday: 8:00 AM – 12:00 PM' },
+  { icon: '📍', title: 'Visit Us',      text: 'No:16,North Street,Old Saram\n(Near Water Tank),Puducherry-605 013.' },
+  { icon: '📞', title: 'Call Us',       text: '+91 7010034228\n+91 7070294012'                        },
+  { icon: '✉️', title: 'Email Us',      text: '\ninfo@learnnlaugh.edu'             },
+  { icon: '⏰', title: 'School Hours',  text: 'Mon – Fri: 9:00 AM – 7:00 PM\nSaturday: 9:00 AM – 2:00 PM' },
 ]
 
 export default function Contact() {
@@ -34,17 +34,15 @@ export default function Contact() {
           <div className={`reveal${vis ? ' in' : ''} rev-d2`}>
             <div className="map-box">
               <div className="map-inner">
-                <span className="map-icon">🗺️</span>
-                <h4>123 Sunshine Boulevard</h4>
-                <p>Greenfield Park, MetroCity MC 45678</p>
-                <a
-                  href="https://www.google.com/maps"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="map-link"
-                >
-                  📍 View on Google Maps
-                </a>
+               <iframe
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7806.938186612713!2d79.81194287510603!3d11.941989588286715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a53613f7b7fcbfd%3A0x538d6d8bd7718dd7!2sLearn%20'N%20Laugh%20Kids%20Academy!5e0!3m2!1sen!2sin!4v1782023965635!5m2!1sen!2sin"
+                 width="100%"
+                 height="350"
+                 style={{ border: 0 }}
+                 allowFullScreen
+                 loading="lazy"
+                 referrerPolicy="no-referrer-when-downgrade"
+               ></iframe>
               </div>
             </div>
           </div>
