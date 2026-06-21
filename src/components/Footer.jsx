@@ -79,10 +79,10 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Get In Touch</h4>
             {[
-              { icon: '📍', text: '123 Sunshine Boulevard, Greenfield Park, MetroCity MC 45678' },
-              { icon: '📞', text: '+1 (555) 123-4567\n+1 (555) 987-6543' },
+              { icon: '📍', text: 'No:16,North Street,Old Saram\n(Near Water Tank),Puducherry-605 013.' },
+              { icon: '📞', text: '+91 7010034228\n+91 7070294012' },
               { icon: '✉️', text: 'admissions@learnnlaugh.edu\ninfo@learnnlaugh.edu' },
-              { icon: '⏰', text: 'Mon–Fri: 7:30 AM–4:00 PM\nSat: 8:00 AM–12:00 PM' },
+              { icon: '⏰', text: 'Mon–Fri: 9:00 AM–7:00 PM\nSat: 9:00 AM–2:00 PM' },
             ].map(i => (
               <div key={i.text} className="footer-citem">
                 <span className="footer-citem-icon">{i.icon}</span>
