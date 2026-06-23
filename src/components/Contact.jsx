@@ -16,7 +16,7 @@ export default function Contact() {
           <div className="section-badge">📍 Contact Us</div>
           <h2 className="section-title">We'd Love to <span className="gradient-text">Hear From You</span></h2>
           <p className="section-subtitle" style={{ margin: '0 auto' }}>
-            Have questions about admissions, curriculum, or campus life? Our team is always happy to help.
+            Have questions about admissions, curriculum, or campus life? Welcome! Our team is always happy to help.
           </p>
         </div>
         <div className="contact-inner">
